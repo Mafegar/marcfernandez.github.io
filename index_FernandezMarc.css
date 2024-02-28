@@ -349,7 +349,7 @@ nav a:hover {
 
 
 /* RESPONSIVE MOVIL */
-@media screen and (max-width: 767px) {
+@media screen and  (min-width: 390px) and (max-width: 767px){
     
     .titulo-pricipal h1{
         font-size: 1.5em;
