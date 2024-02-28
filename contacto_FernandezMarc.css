@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Koh+Santepheap:wght@100;300;400;700;900&family=PT+Serif+Caption:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 
+    font-family: "Koh Santepheap", serif; --> Tipografia para algunos titulos.
+    font-family: "PT Serif Caption", serif; --> Tipogradia para el texto basico.
+    font-family: "PT Serif", serif; --> Tipografia para el menu.
+    font-family: "Gelasio", serif; --> Tipografia para los titulos.
+
+*/
+
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg, rgba(2,2,2,1) 0%, rgba(83,83,83,1) 100%);
+}
+
+/* FONDO */
+
+#video_background {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+#video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* CABECERA */
+
+header {
+    width: 1000px;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+
+/* MENU */
+
+.logo img {
+    width: 230px;
+    margin-top: -38px;
+}
+
+.navbar-expand-md{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   font-family: "PT Serif", serif;
+   margin-bottom: 60px;
+   flex-basis: auto;
+
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.navbar-expand-md .navbar-nav .nav-link{
+    text-decoration: none; 
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.izquierda{
+    animation-name: izquierda;
+    animation-duration: 1s;
+    position: relative;
+}
+
+.izquierda-1{
+    animation-name: izquierda;
+    animation-duration: 1.3s;
+    position: relative;
+}
+
+.izquierda-2{
+    animation-name: izquierda;
+    animation-duration: 1.6s;
+    position: relative;
+}
+
+.izquierda-3{
+    animation-name: izquierda;
+    animation-duration: 1.9s;
+    position: relative;
+}
+
+.navbar-expand-md .navbar-nav a:hover {
+    background-color: white;
+    color: rgb(41, 41, 41);
+    transition: 0.8s;
+}
+
+@keyframes izquierda {
+    from {
+        left: 2000px;
+    }
+
+    to {
+        left: 0px;
+    }
+
+}
+
+.logo{
+    animation-name: derecha;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes derecha {
+    from {
+        right: 2000px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+/* CUERPO */
+
+.cuerpo {
+    width: 1000px;
+    margin: auto;
+    color: white;
+    font-family: "PT Serif", serif;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.cuerpo h1{
+    text-align: center;
+}
+
+.cuerpo form span {
+    font-size: 0.7em;
+    font-family: "Koh Santepheap", serif;
+}
+
+span{
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 12ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end
+        alternate;
+    overflow: hidden;
+    color: aliceblue;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.cuerpo form h5{
+    font-family: "Koh Santepheap", serif;
+    font-size: 1.22em;
+    color: rgb(42, 242, 125);
+}
+
+.formulario{
+    background: linear-gradient(180deg, rgba(83,83,83,1) 0%, rgb(7, 7, 7) 100%);
+    padding: 33px;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    font-family: "Gelasio";
+    color: white;   
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    margin: -80px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 88px;
+    width: 100%;
+    animation: move linear 5s infinite;  
+}
+
+@keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 hsla(0, 0%, 0%, .9), 
+        3px -3px 0 hsla(0, 0%, 0%, .9), 
+        2px -2px 0 hsla(0, 0%, 0%, .9), 
+        1px -1px 0 hsla(0, 0%, 0%, .9),
+        -4px 4px 0 rgb(42, 242, 125), 
+        -3px 3px 0 rgb(42, 242, 125), 
+        -2px 2px 0 rgb(42, 242, 125), 
+        -1px 1px 0 rgb(42, 242, 125)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 rgb(42, 242, 125), 
+        -3px -3px 0 rgb(42, 242, 125), 
+        -2px -2px 0 rgb(42, 242, 125), 
+        -1px -1px 0 rgb(42, 242, 125),
+        4px 4px 0 hsla(0, 0%, 0%, .9), 
+        3px 3px 0 hsla(0, 0%, 0%, .9), 
+        2px 2px 0 hsla(0, 0%, 0%, .9), 
+        1px 1px 0 hsla(0, 0%, 0%, .9)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 hsla(0, 0%, 0%, .9), 
+        -3px 3px 0 hsla(0, 0%, 0%, .9), 
+        -2px 2px 0 hsla(0, 0%, 0%, .9), 
+        -1px 1px 0 hsla(0, 0%, 0%, .9),
+        4px -4px 0 rgb(42, 242, 125), 
+        3px -3px 0 rgb(42, 242, 125), 
+        2px -2px 0 rgb(42, 242, 125), 
+        1px -1px 0 rgb(42, 242, 125)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 rgb(42, 242, 125), 
+        3px 3px 0 rgb(42, 242, 125), 
+        2px 2px 0 rgb(42, 242, 125), 
+        1px 1px 0 rgb(42, 242, 125),
+        -4px -4px 0 hsla(0, 0%, 0%, .9), 
+        -3px -3px 0 hsla(0, 0%, 0%, .9), 
+        -2px -2px 0 hsla(0, 0%, 0%, .9), 
+        -1px -1px 0 hsla(0, 0%, 0%, .9)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 hsla(0, 0%, 0%, .9), 
+        3px -3px 0 hsla(0, 0%, 0%, .9), 
+        2px -2px 0 hsla(0, 0%, 0%, .9), 
+        1px -1px 0 hsla(0, 0%, 0%, .9),
+        -4px 4px 0 rgb(42, 242, 125), 
+        -3px 3px 0 rgb(42, 242, 125), 
+        -2px 2px 0 rgb(42, 242, 125), 
+        -1px 1px 0 rgb(42, 242, 125)
+      ;
+    }  
+}
+
+.formulario form{
+    margin-top: 25px;
+}
+
+.formulario form input{
+    width: 933px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    /* color: rgb(109, 219, 154); */
+}
+
+.formulario form textarea{
+    width: 933px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.nombre-apellido {
+    display: flex;
+    gap: 50px;
+}
+
+.nombre-apellido input {
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.boton-enviar button {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #434343;
+    color: aliceblue;
+    margin: auto;
+}
+
+.boton-enviar button:hover{
+    box-shadow: 0px 0px 40px 0px rgb(42, 242, 125);
+    transition: 1s all;
+    color: rgb(42, 242, 125);
+}
+
+
+
+/* PIE DE PAGINA */
+
+#pie-pagina{
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #252525;
+}
+
+#pie-pagina p{
+    margin: 0px;
+    padding: 20px;
+    color: white;
+}
+
+.secction-pie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.info a{
+    color: white;
+}
+
+.logo-pie{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.logo-pie h3{
+    color: white;
+    font-family: "Gelasio";
+}
+
+.iconos {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.iconos a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+    /* border-right: 1px solid white; */
+}
+
+.iconos p{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+
+/* RESPONSIVE TABLE */
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+    /* HEADER */
+
+    header{
+        width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /* CUERPO */
+
+    .cuerpo{
+        width: 700px;
+        margin-top: 0px;
+    }
+
+    .formulario form input{
+        width: 635px;
+    }
+
+    .formulario form textarea{
+        width: 635px;
+    }
+
+    /* PIE DE PAGINA */
+
+    .info{
+        font-size: 1em;
+    }
+
+    .logo-pie{
+        border-left: 0px solid white;
+        border-right: 0px solid white;
+        font-size: 1em;
+    }
+
+    .logo-pie{
+        font-size: 1em;
+    }
+
+    .iconos a{
+        font-size: 1.5em;
+        width: 10px;
+        margin: 8px;
+    }
+
+}
+
+
+/* RESPONSIVE MOVIL */
+@media screen and  (min-width: 390px) and (max-width: 767px){
+
+    header{
+        width: 370px;
+    }
+
+    /* HEADER */
+
+    .container{
+        justify-content: center;
+    }
+
+    /* MENU */
+    .navbar-expand-md .navbar-nav{
+        padding: 0px;
+    }
+
+    nav li{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    /* CUERPO */
+
+    .cuerpo{
+        width: 350px;
+    }
+
+    .cuerpo form h5{
+        width: auto;
+    }
+
+    .formulario{
+        width: 355px;
+        margin: auto;
+        padding: 22px;
+    }
+
+    .nombre-apellido {
+        display: block;
+        /* margin: auto; */
+        padding: 0px;
+    }
+
+    .nombre-apellido input{
+        margin-top: 25px !important;
+    }
+
+    .formulario form{
+        width: 320px;
+    }
+
+    .formulario form input{
+        width: 310px;
+    }
+
+    .formulario form textarea{
+        width: 310px;
+    }
+
+    /* PIE DE PAGINA */
+
+    .secction-pie{
+        display: block;
+    }
+
+    .info{
+        margin-bottom: 50px;
+    }
+
+    .logo-pie{
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        border-left: 0px;
+        border-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 200px;
+        margin: auto;
+    }   
+}

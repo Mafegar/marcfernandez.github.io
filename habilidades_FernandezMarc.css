@@ -1,0 +1,1172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Koh+Santepheap:wght@100;300;400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif+Caption:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* 
+    font-family: "Koh Santepheap", serif; --> Tipografia para algunos titulos.
+    font-family: "PT Serif Caption", serif; --> Tipogradia para el texto basico.
+    font-family: "PT Serif", serif; --> Tipografia para el menu.
+    font-family: "Gelasio", serif; --> Tipografia para los titulos.
+    font-family: "Roboto Slab"; --> Tipografia para titulos.
+
+*/
+
+:root{
+    --letras: rgb(233, 233, 233);
+    --backgrounds: rgb(42, 42, 42);
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg, rgba(2,2,2,1) 0%, rgba(83,83,83,1) 100%);
+}
+
+/* FONDO */
+#video_background {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: -1000;
+    overflow: hidden;
+    filter: brightness(60%);
+}
+
+#video_pattern {
+    /* background:#fff; */
+    position: absolute;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* HEADER */
+
+header {
+    width: 1000px;
+    margin: auto;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    /* background-color: rgba(42, 42, 42, 0.512); */
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+
+.logo img {
+    width: 230px;
+    margin-top: 0px;
+    filter: brightness(1.70);
+}
+
+.navbar-expand-md{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   font-family: "PT Serif", serif;
+   margin-bottom: 60px;
+   flex-basis: auto;
+
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.navbar-expand-md .navbar-nav .nav-link{
+    text-decoration: none; 
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.izquierda{
+    animation-name: izquierda;
+    animation-duration: 1s;
+    position: relative;
+}
+
+.izquierda-1{
+    animation-name: izquierda;
+    animation-duration: 1.3s;
+    position: relative;
+}
+
+.izquierda-2{
+    animation-name: izquierda;
+    animation-duration: 1.6s;
+    position: relative;
+}
+
+.izquierda-3{
+    animation-name: izquierda;
+    animation-duration: 1.9s;
+    position: relative;
+}
+
+.navbar-expand-md .navbar-nav a:hover {
+    background-color: white;
+    color: rgb(41, 41, 41);
+    transition: 0.8s;
+}
+
+@keyframes izquierda {
+    from {
+        left: 2000px;
+    }
+
+    to {
+        left: 0px;
+    }
+
+}
+
+.logo{
+    animation-name: derecha;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes derecha {
+    from {
+        right: 2000px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+/* CUERPO */
+
+.cuerpo{
+    margin: 60px;
+    text-align: center;
+    color: white;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* background-color: rgba(103, 103, 103, 0.512); */
+    background: linear-gradient(180deg, rgba(83,83,83,1) 0%, rgb(7, 7, 7) 100%);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.cuerpo p{
+    font-family: "PT Serif Caption";
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.cuerpo h1{
+    color: white;
+    padding-top: 20px;
+    font-family: "Roboto Slab";
+    font-size: 2.2em;
+}
+
+.cuerpo h2{
+    padding-top: 50px;
+    /* padding-top: 20px; */
+    font-family: "Roboto Slab";
+    font-weight: 600;
+    font-size: 1.9em;
+}
+
+.brde1{
+    margin-top: 25px;
+    border-top: 4px solid var(--letras);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0;
+    transition: opacity 1s; */
+    transform: translateX(-200%);
+    animation: aparecer 1.6s forwards;
+    animation-delay: 0.5s;
+}
+.brde1 p{
+    color: rgba(83,83,83,1);
+}
+
+.brde2{
+    border-bottom: 4px solid var(--letras);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateX(200%);
+    animation: aparecer 1.6s forwards;
+    animation-delay: 0.5s;
+}
+.brde2 p{
+    color: rgb(71 71 71);
+}
+
+.leng-1{
+    width: 940px;
+    margin: auto;
+}
+
+.leng-1 img{
+    width: 176px;
+    margin-top: 30px;
+}
+
+.fila-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 116px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.fila-1 img{
+    margin-top: 20px;
+}
+
+.fila-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 20px;
+    
+}
+
+.fila-2 img{
+    margin-bottom: 20px;
+}
+
+.html{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.html img{
+    width: 110px;
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.css{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.css img{
+    width: 80px;
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.js{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+    
+}
+
+.js img{
+    width: 90px;
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.c-plus{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.c-plus img{
+    width: 80px;
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(-200%);
+    animation: aparecer 1.4s forwards;
+}
+
+.java{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.java img{
+    width: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.xml{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.xml img{
+    width: 90px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.sql{
+    background-color: rgba(170,170,170,1);
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(200%);
+    animation: aparecer 1.6s forwards;
+}
+
+.sql img{
+    width: 90px;
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateY(200%);
+    animation: aparecer 1.6s forwards;
+}
+
+@keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+.idiomas{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    color: black;
+    width: 940px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    padding: 45px;
+    
+    
+}
+
+.idiomas h3{
+    /* color: rgb(250, 250, 250); */
+    font-weight: 800;
+    font-family: "Roboto Slab";
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.idiomas p{
+    font-weight: 600;
+}
+
+.caste{
+    border: 4px solid var(--letras);
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(170,170,170,1);
+    /* background-color: rgba(42, 242, 125, 0.714); */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: appear 3s forwards;
+    color: rgb(250, 250, 250);
+}
+
+.caste:hover{
+    box-shadow: 0px 10px 10px 0px rgb(208, 208, 208);
+    transition: 1s all;
+    color: #000 !important;
+}
+
+.cata{
+    border: 4px solid var(--letras);
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(170,170,170,1);
+    /* background-color: rgba(42, 242, 125, 0.714); */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: appear 3s forwards;
+    animation-delay: 1s;
+    color: rgb(250, 250, 250);
+}
+
+.cata:hover{
+    box-shadow: 0px 10px 10px 0px rgb(208, 208, 208);
+    transition: 1s all;
+    color: #000 !important;
+}
+
+.ingle{
+    border: 4px solid var(--letras);
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(170,170,170,1);
+    /* background-color: rgba(42, 242, 125, 0.714); */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: appear 3s forwards;
+    animation-delay: 2s;
+    color: rgb(250, 250, 250);
+
+}
+
+.ingle:hover{
+    box-shadow: 0px 10px 10px 0px rgb(208, 208, 208);
+    transition: 1s all;
+    color: #000 !important;
+}
+
+@keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* ESTUDIOS */
+
+.estudios{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 940px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+    padding: 34px;
+    
+}
+
+.estudios h2{
+    font-size: 1.4em;
+    padding-top: 20px !important;
+}
+
+.texto-estudio{
+    background-color: rgb(170, 170, 170);
+    /* background-color: rgba(42, 242, 125, 0.714); */
+    border-top: 3px solid var(--letras);
+    border-bottom: 3px solid var(--letras);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.texto-estudio:hover{
+    box-shadow: 0px 10px 10px 0px rgb(234, 234, 234);
+    /* background-color: rgb(42, 242, 125, 0.714); */
+    transition: 1s all;
+    color: #000;
+}
+
+.texto-estudio p{
+    font-family: "PT Serif Caption";
+}
+
+
+/* EXPERIENCIA LABORAL */
+.experiencia{
+    /* background-color: rgba(170,170,170,1); */
+    border-radius: 10px;
+    width: 940px;
+    margin: auto;
+    margin-top: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+}
+
+.experiencia h2{
+    text-align: center;
+    font-size: 1.4em;
+
+}
+
+.fecha{
+    text-align: center !important;
+}
+
+.trabajo-1{
+    width: 360px;
+    border-right: 4px solid rgba(170,170,170,1);
+    padding-right: 20px;
+    margin-left: 114px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: appear 3s forwards;
+    
+    
+}
+
+.trabajo-1 p{
+    text-align: justify;
+}
+
+.trabajo-1 .flecha{
+    position: relative;
+    width: 20px; 
+}
+
+.trabajo-1 .flecha img{
+    position: absolute; 
+    top: 17px; 
+    left: -16px; 
+    width: 400%; 
+    height: 20%;  
+}
+
+.flecha span{
+    position: absolute; 
+    top: 25px; 
+    right: 8px;
+    z-index: 1; 
+}
+
+.trabajo-2{
+    width: 360px;
+    margin-left: 470px;
+    border-left: 4px solid rgba(170,170,170,1);
+    padding-left: 20px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: appear 3s forwards;
+    animation-delay: 1s;
+}
+
+.trabajo-2 p{
+    text-align: justify;
+}
+
+.trabajo-2 .flecha-2{
+    position: relative;
+    width: 20px; 
+}
+
+.trabajo-2 .flecha-2 img{
+    position: absolute; 
+    top: 17px; 
+    left: -12px; 
+    width: 900%; 
+    height: 17%;  
+}
+
+.trabajo-3{
+    width: 360px;
+    border-right: 4px solid rgba(170,170,170,1);
+    padding-right: 20px;
+    margin-left: 114px;
+    display: flex;background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: appear 3s forwards;
+    animation-delay: 2s;
+}
+
+.trabajo-3 p{
+    text-align: justify;
+}
+
+.trabajo-3 .flecha{
+    position: relative;
+    width: 20px; 
+}
+
+.trabajo-3 .flecha img{
+    position: absolute; 
+    top: 17px; 
+    left: -16px; 
+    width: 600%; 
+    height: 20%;  
+}
+
+.texto{
+    background-color: rgba(170,170,170,1);
+    padding: 15px;
+    border-radius: 15px;
+    /* margin-right: 15px; */
+}
+
+.texto2{
+    background-color: rgba(170,170,170,1);
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+/* CERTIFICADOS */
+
+.certificados{
+    /* background-color: rgba(170,170,170,1); */
+    border-radius: 10px;
+    width: 940px;
+    margin: auto;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-top: 4px solid var(--letras);
+    border-bottom: 4px solid var(--letras);
+}
+
+.certificados img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.certis{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.img-certis{
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+}
+/* 
+.img-certis:hover img{
+    box-shadow: 0px 15px 50px 15px rgb(34, 34, 34);
+    transition: 1s all;
+} */
+
+.texto-oracle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(38, 38, 38, 0.782);
+    color: white; 
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    font-family: "Roboto Slab";
+    border-radius: 10px;
+}
+
+.img-certis:hover .texto-oracle{
+    opacity: 1;
+}
+
+.windows-certi img{
+    width: 390px;
+    height: auto;
+}
+
+
+/* PIE DE PAGINA */
+
+#pie-pagina{
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #252525;
+}
+
+#pie-pagina p{
+    margin: 0px;
+    padding: 20px;
+    color: white;
+}
+
+.secction-pie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.info a{
+    color: white;
+}
+
+.logo-pie{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.logo-pie h3{
+    color: white;
+    font-family: "Gelasio";
+}
+
+.iconos {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.iconos a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.iconos p{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+/* RESPONSIVE TABLE */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+    /* HEADER */
+    header{
+        width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    /* CUERPO */
+
+    .cuerpo{
+        width: 700px;
+        margin-top: 0px;
+    }
+    .cuerpo h2{
+        margin-top: 20px;
+    }
+
+    /* Habilidades */
+
+    .leng-1{
+        width: 176px;
+        margin: auto;
+    }
+
+    .fila-1{
+        /* display: block; */
+        gap: 35px;
+        text-align: center;
+    }
+
+    .fila-2{
+        /* display: block; */
+        text-align: center;
+    }
+
+    .css, .js, .c-plus, .java, .xml, .sql{
+        margin-top: 20px;
+    }
+
+    /* Idiomas */
+
+    .idiomas{
+        display: block;
+        text-align: center;
+        width: 400px;
+    }
+
+    .caste, .cata, .ingle{
+        margin-top: 20px;
+    }
+
+    /* Estudios */
+
+    .estudios{
+        display: block;
+        width: 400px;   
+    }
+
+    .texto-estudio{
+        margin-top: 20px;
+    }
+
+    /* Experiencia laboral */
+
+    .experiencia{
+        display: block;
+        width: 300px;
+    }
+
+    .trabajo-1, .trabajo-3{
+        display: block;
+        margin: auto;
+        width: auto;
+        margin-top: 20px;
+        padding-right: 0px;
+        margin-left: 0px;
+        border: 0px;
+    }
+
+    .trabajo-2{
+        display: block;
+        margin: auto;    
+        width: auto;
+        margin-left: 0px;
+        padding-left: 0px;
+        border: 0px;
+        margin-top: 20px;
+    }
+
+    .texto2{
+        margin: 0px;
+    }
+
+    .flecha, .flecha-2{
+        display: none;
+    }
+
+    /* Certificados */
+
+    .certificados{
+        display: block;
+        width: 300px;
+        padding-top: 5px;
+        padding-bottom: 45px;
+
+    }
+    
+    .certificados img{
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .certis{
+        display: block;
+        text-align: center; 
+    }
+
+
+    /* PIE DE PAGINA */
+
+    .info{
+        font-size: 1em;
+    }
+
+    .logo-pie{
+        border-left: 0px solid white;
+        border-right: 0px solid white;
+        font-size: 1em;
+    }
+
+    .logo-pie{
+        font-size: 1em;
+    }
+
+    .iconos a{
+        font-size: 1.5em;
+        width: 10px;
+        margin: 8px;
+    }
+}
+
+
+/* RESPONSIVE MOVIL */
+@media screen and  (min-width: 390px) and (max-width: 767px){
+
+    header{
+        width: 370px;
+    }
+
+    /* HEADER */
+
+    .container{
+        justify-content: center;
+    }
+
+    .navbar-expand-md .navbar-nav{
+        padding: 0px;
+    }
+
+    nav li{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    /* CUERPO */
+
+    .cuerpo{
+        width: 360px;
+    }
+    .cuerpo h2{
+        margin-top: 20px;
+    }
+
+    /* Habilidades */
+
+    .leng-1{
+        width: 300px;
+    }
+
+    .fila-1{
+        display: block;
+        text-align: center;
+    }
+
+    .fila-2{
+        display: block;
+        text-align: center;
+    }
+
+    .css, .js, .c-plus, .java, .xml, .sql{
+        margin-top: 20px;
+    }
+
+    /* Idiomas */
+
+    .idiomas{
+        display: block;
+        text-align: center;
+        width: 300px;
+    }
+
+    .caste, .cata, .ingle{
+        margin-top: 20px;
+    }
+
+    /* Estudios */
+
+    .estudios{
+        display: block;
+        width: 300px;
+    }
+
+    .texto-estudio{
+        margin-top: 20px;
+    }
+
+    /* Experiencia laboral */
+
+    .experiencia{
+        display: block;
+        width: 300px;
+    }
+
+    .trabajo-1, .trabajo-3{
+        display: block;
+        margin: auto;
+        width: auto;
+        margin-top: 20px;
+        padding-right: 0px;
+        margin-left: 0px;
+        border: 0px;
+    }
+
+    .trabajo-2{
+        display: block;
+        margin: auto;    
+        width: auto;
+        margin-left: 0px;
+        padding-left: 0px;
+        border: 0px;
+        margin-top: 20px;
+    }
+
+    .texto2{
+        margin: 0px;
+    }
+
+    .flecha, .flecha-2{
+        display: none;
+    }
+
+    /* Certificados */
+
+    .certificados{
+        display: block;
+        width: 300px;
+        padding-top: 5px;
+        padding-bottom: 45px;
+
+    }
+    
+    .certificados img{
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .certis{
+        display: block;
+        text-align: center; 
+    }
+
+    /* PIE DE PAGINA */
+
+    .secction-pie{
+        display: block;
+    }
+
+    .info{
+        margin-bottom: 50px;
+    }
+
+    .logo-pie{
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        border-left: 0px;
+        border-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 200px;
+        margin: auto;
+    }
+}
+
