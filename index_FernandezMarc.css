@@ -97,7 +97,7 @@ header{
 .link-insta {
     width: 30px;
     height: 30px;
-    background-image: url('../img/instagram_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
+    background-image: url('./instagram_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -109,7 +109,7 @@ header{
 .link-tiktok {
     width: 30px;
     height: 30px;
-    background-image: url('../img/tiktok_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
+    background-image: url('./tiktok_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -120,7 +120,7 @@ header{
 .link-twitter {
     width: 30px;
     height: 30px;
-    background-image: url('../img/twitter_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
+    background-image: url('./twitter_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -131,7 +131,7 @@ header{
 .link-linkedin {
     width: 30px;
     height: 30px;
-    background-image: url('../img/linkedin_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
+    background-image: url('./linkedin_logo.png'); /* Reemplaza 'tu-logo.png' con la ruta de tu imagen de logo */
     background-size: cover;
     background-position: center;
     opacity: 0;
