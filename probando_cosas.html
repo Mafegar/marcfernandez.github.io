@@ -1,0 +1,234 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<title>Animación de logo al recargar la página</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/left-arrow.png'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateY(-100%);
+    animation: appear 1s forwards;
+  }
+
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+  .navbar-expand-lg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "PT Serif", serif;
+    margin-bottom: 60px;
+
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+      justify-content: center;
+
+  }
+
+  nav li{
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 30px;
+      margin-right: 30px;
+      color: #eee;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link{
+      text-decoration: none; 
+      color: white;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      border-radius: 10px;
+      padding: 15px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+
+  }
+
+  .izquierda{
+      animation-name: izquierda;
+      animation-duration: 1s;
+      position: relative;
+  }
+
+  .izquierda-1{
+      animation-name: izquierda;
+      animation-duration: 1.3s;
+      position: relative;
+  }
+
+  .izquierda-2{
+      animation-name: izquierda;
+      animation-duration: 1.6s;
+      position: relative;
+  }
+
+  .izquierda-3{
+      animation-name: izquierda;
+      animation-duration: 1.9s;
+      position: relative;
+  }
+
+  .navbar-expand-lg .navbar-nav a:hover {
+      background-color: white;
+      color: rgb(41, 41, 41);
+      transition: 0.8s;
+  }
+
+  @keyframes izquierda {
+      from {
+          left: 2000px;
+      }
+
+      to {
+          left: 0px;
+      }
+
+  }
+
+  .logo{
+      animation-name: derecha;
+      animation-duration: 1s;
+      position: relative;
+  }
+
+  @keyframes derecha {
+      from {
+          right: 2000px;
+      }
+
+      to {
+          right: 0px;
+      }
+  }
+
+
+@media screen and (max-width: 767px){
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="logo"></div>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link izquierda" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link izquierda-1" href="./about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link izquierda-2" href="./proyectos.html">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link izquierda-3" href="./contacto.html">CONTACTO</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación al hacer scroll</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+
+.container {
+    height: 2000px; /* Altura de ejemplo para que haya suficiente espacio para hacer scroll */
+}
+
+.content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.content.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.scroll-button:hover .container .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Contenido de ejemplo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus ante dapibus diam. Sed nisi elit, maximus ac mauris non, ullamcorper eleifend nulla.</p>
+            <!-- Más contenido -->
+        </div>
+        <a href="#content" class="scroll-button">Desplazarse</a>
+    </div>
+</body>
+</html>
